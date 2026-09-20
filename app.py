@@ -193,7 +193,7 @@ with col_out:
             with st.spinner(f"Claude SEO 엔진이 5개 채널 콘텐츠를 최적화하여 작성 중입니다 (본식 D-{d_day})..."):
                 try:
                     genai.configure(api_key=api_key)
-                    model = genai.GenerativeModel("gemini-1.5-flash")
+                    model = genai.GenerativeModel("gemini-3-flash-preview")
                     
                     content_inputs = []
                     if uploaded_files:
